@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    */
+}
+body{
+    background:rgba(0,0,0,0.85);
+}
+.active_pan_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.active_pan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    background:#ccc;
+    border-radius:20px;
+}
+.active_pan_wrap_close{
+
+}
+.active_pan_wrap_close{
+    width: 40px;
+    height:40px;
+    background: url(../icons/close.svg);
+    background-size: 100%;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+}
+.active_pan_wrap_close:hover{
+    width: 40px;
+    height:40px;
+    background: url(../icons/close.svg);
+    background-size: 100%;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+    -webkit-transform:rotate(-180deg);
+}
+/*
+.icons{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 125px;
+    overflow: hidden;
+ }
+.icon{
+    display: inline-block;
+}
+*/
+.icon{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.icon img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: table;
+    max-width: 100%;
+    max-height: 100%;
+}
+.footer{
+    width: 100%;
+    height: 55px;
+    background: #000;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer_text{
+    text-align: center;
+    color: #fff;
+    line-height: 75px;
+    font-size: 12px;
+}
+.center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 70px;
+}
+.ani{
+    -webkit-transform: translate3d(812.09px, 401.7px, 0px) scale(1) rotate(0deg);
+}
+.btn{
+    cursor: pointer;
+}
+.hide{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.bigpic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: table;
+    max-width: 100%;
+    max-height: 100%;
+}
+.a{
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
