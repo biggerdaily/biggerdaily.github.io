@@ -1,38 +1,39 @@
-<!doctype html>
-<html lang="zh-cmn-Hans">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head lang="en">
     <title>{{ page.title }}</title>
     <meta name="description" content="逼格邮报，提升逼格。">
-    <meta name="viewport" content="initial-scale=2.0,maximum-scale=1,user-scalable=no">
-    <meta property="author" content="codetyphon"/>
-    <meta name="twitter:site" content="@codetyphon"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            width: 96%;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-  <div class="header full">
-    <div class="nav wrap">
-      <div class="logo"><h1>逼格邮报</h1></div>
-      <div class="menu_items">
-        <div class="menu_item">首页</div>
-        <div class="menu_item">好书</div>
-        <div class="menu_item">好站</div>
-        <div class="menu_item">好应用</div>
-        <div class="menu_item">好公号</div>
-        <div class="menu_item">榜样</div>
-        <div class="menu_item">关于</div>
-      </div>
-    </div>
-  </div>
-  <div class="main wrap">
-      {{ content }}
-  </div>
-  <div class="footer full">
-    <div class="copy wrap">
-        Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script>
-            <a href="http://www.biggerdaily.com/" target="_blank">逼格邮报</a></a> All Rights Reserved.
-            <img src="http://img.users.51.la/17772072.asp" style="display:none" />
-    </div>
-  </div>
+<div class="page-header">
+    <h1>逼格邮报 <small>从细节提升你的逼格</small></h1>
+</div>
+
+<ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">首页</a></li>
+    <li role="presentation"><a href="pic" target="_blank"><span class="glyphicon glyphicon-picture"></span>&nbsp;&nbsp;照片墙</a></li>
+    <li role="presentation"><a href="video" target="_blank"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;视频</a></li>
+    <li role="presentation"><a href="about"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;联系我们</a></li>
+</ul>
+
+{{ content }}
+
+<div class="row">
+    <div class="col-xs-6 col-md-4"></div>
+    <div class="col-xs-6 col-md-4">Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script>
+        <a href="http://www.biggerdaily.com/" target="_blank">逼格邮报</a></a> All Rights Reserved.
+        <img src="http://img.users.51.la/17772072.asp" style="display:none" /></div>
+    <div class="col-xs-6 col-md-4"></div>
+</div>
 </body>
 </html>

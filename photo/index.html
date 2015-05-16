@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>图片等高响应式布局</title>
+    <link rel="stylesheet" type="text/css" href="page.css">
+</head>
+<body>
+<div class="imgList">
+    <div class="imgItem" data-url="images/1.jpg" onclick="icon_on_click(this)">
+        <div class="imgItem-cover">
+            <div class="imgItem-descript textoverflow">
+                <p class="imgItem-title">白天鹅（北京动物园）</p>
+                <small class="imgItem-time">2015-5</small>
+            </div>
+            <div class="imgItem-opt">
+                <div class="imgItem-comment">
+                    <i class="comment-btn" onselectstart="return false"></i>
+                    <span class="comment-num"></span>
+                </div>
+                <div class="imgItem-praise">
+                    <i class="praise-btn" onselectstart="return false"></i>
+                    <span class="praise-num"></span>
+                </div>
+            </div>
+        </div>
+        <a>
+            <img src="images/1.jpg" />
+        </a>
+    </div>
+    <div class="imgItem" data-url="images/2.jpg" onclick="icon_on_click(this)">
+        <div class="imgItem-cover">
+            <div class="imgItem-descript textoverflow">
+                <p class="imgItem-title">蜜蜂与花</p>
+                <small class="imgItem-time">2015-5</small>
+            </div>
+            <div class="imgItem-opt">
+                <div class="imgItem-comment">
+                    <i class="comment-btn" onselectstart="return false"></i>
+                    <span class="comment-num"></span>
+                </div>
+                <div class="imgItem-praise">
+                    <i class="praise-btn" onselectstart="return false"></i>
+                    <span class="praise-num"></span>
+                </div>
+            </div>
+        </div>
+        <a>
+            <img src="images/2.jpg" />
+        </a>
+    </div>
+    <div class="imgItem" data-url="images/3.jpg" onclick="icon_on_click(this)">
+        <div class="imgItem-cover">
+            <div class="imgItem-descript textoverflow">
+                <p class="imgItem-title">这是什么鸟？</p>
+                <small class="imgItem-time">2015-5</small>
+            </div>
+            <div class="imgItem-opt">
+                <div class="imgItem-comment">
+                    <i class="comment-btn" onselectstart="return false"></i>
+                    <span class="comment-num"></span>
+                </div>
+                <div class="imgItem-praise">
+                    <i class="praise-btn" onselectstart="return false"></i>
+                    <span class="praise-num"></span>
+                </div>
+            </div>
+        </div>
+        <a>
+            <img src="images/3.jpg" />
+        </a>
+    </div>
+    <div class="imgItem" data-url="images/5.jpg" onclick="icon_on_click(this)">
+        <div class="imgItem-cover">
+            <div class="imgItem-descript textoverflow">
+                <p class="imgItem-title">大熊猫</p>
+                <small class="imgItem-time">2015-5</small>
+            </div>
+            <div class="imgItem-opt">
+                <div class="imgItem-comment">
+                    <i class="comment-btn" onselectstart="return false"></i>
+                    <span class="comment-num"></span>
+                </div>
+                <div class="imgItem-praise">
+                    <i class="praise-btn" onselectstart="return false"></i>
+                    <span class="praise-num"></span>
+                </div>
+            </div>
+        </div>
+        <a>
+            <img src="images/5.jpg" />
+        </a>
+    </div>
+
+    <div class="imgItem" data-url="images/6.jpg" onclick="icon_on_click(this)">
+        <div class="imgItem-cover">
+            <div class="imgItem-descript textoverflow">
+                <p class="imgItem-title">好好吃的样子啊</p>
+                <small class="imgItem-time">2015-5</small>
+            </div>
+            <div class="imgItem-opt">
+                <div class="imgItem-comment">
+                    <i class="comment-btn" onselectstart="return false"></i>
+                    <span class="comment-num"></span>
+                </div>
+                <div class="imgItem-praise">
+                    <i class="praise-btn" onselectstart="return false"></i>
+                    <span class="praise-num"></span>
+                </div>
+            </div>
+        </div>
+        <a>
+            <img src="images/6.jpg" />
+        </a>
+    </div>
+
+    <div class="imgItem" data-url="images/7.jpg" onclick="icon_on_click(this)">
+        <div class="imgItem-cover">
+            <div class="imgItem-descript textoverflow">
+                <p class="imgItem-title">猴子你在思索神马呢？</p>
+                <small class="imgItem-time">2015-5</small>
+            </div>
+            <div class="imgItem-opt">
+                <div class="imgItem-comment">
+                    <i class="comment-btn" onselectstart="return false"></i>
+                    <span class="comment-num"></span>
+                </div>
+                <div class="imgItem-praise">
+                    <i class="praise-btn" onselectstart="return false"></i>
+                    <span class="praise-num"></span>
+                </div>
+            </div>
+        </div>
+        <a>
+            <img src="images/7.jpg" />
+        </a>
+    </div>
+
+    <div class="imgItem" data-url="images/8.jpg" onclick="icon_on_click(this)">
+        <div class="imgItem-cover">
+            <div class="imgItem-descript textoverflow">
+                <p class="imgItem-title">也给我挠痒痒呗</p>
+                <small class="imgItem-time">2015-5</small>
+            </div>
+            <div class="imgItem-opt">
+                <div class="imgItem-comment">
+                    <i class="comment-btn" onselectstart="return false"></i>
+                    <span class="comment-num"></span>
+                </div>
+                <div class="imgItem-praise">
+                    <i class="praise-btn" onselectstart="return false"></i>
+                    <span class="praise-num"></span>
+                </div>
+            </div>
+        </div>
+        <a>
+            <img src="images/8.jpg" />
+        </a>
+    </div>
+</div>
+<div id="active_pan_wrap" class="active_pan_wrap a hide">
+    <div id="active_pan" class="active_pan">
+        <img id="bigpic" class="bigpic" />
+        <div title="关闭" class="active_pan_wrap_close a" onclick="active_pan_wrap_hide();"></div>
+    </div>
+</div>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="photo.js"></script>
+<script>
+    function icon_on_click(el){
+        var bigpic= el.getAttribute("data-url");
+        document.getElementById("active_pan_wrap").setAttribute("class","a active_pan_wrap");
+        document.getElementById("bigpic").setAttribute("src",bigpic);
+    }
+    function active_pan_wrap_hide(){
+        document.getElementById("active_pan_wrap").setAttribute("class","a active_pan_wrap hide");
+    }
+</script>
+</body>
+</html>
